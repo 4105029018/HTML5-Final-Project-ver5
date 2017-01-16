@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body onload="f()">
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+	
+	  <ul class="collection" id="demo">
+	
+	</ul>
+	
+	<div class="card-panel blue darken-1">
+	<script>
+	
+	  function f(){
+	  
+	     
+		 var list=[
+		 {"img":"http://www.tainan.gov.tw/tainan/images/logoicon.jpg","tl":"Tainan","ct":"My Home","lk":"http://htmlpreview.github.io/?https://4105029018.github.io/HTML5-Final-Project-ver5/Tainan.html"},
+		 {"img":"http://www.chamber.org.tw/tc/image/tcoc_09_tc_logo02.gif","tl":"Taichung","ct":"My school","lk":"http://htmlpreview.github.io/?https://4105029018.github.io/HTML5-Final-Project-ver5/Taichung.html"}
+		 
+		 ];
+	  
+	  
+	 var str ="";
+     for(var i=0;i<list.length;i++){
+	 
+	    str +='<li class="collection-item avatar">';
+		str +='<img src="'+list[i].img+'" class="circle">';
+		str +='<span class="tl">'+list[i].tl+'</span>';
+		str +='<p>'+list[i].ct+'</p>';
+		str +='<a href="'+list[i].lk+'"class="secondary-content"><i class="medium material-icons">insert_room</i></a>';
+		str +='</li>';
+	   }	 
+	document.getElementById("demo").innerHTML =str;   
+	
+	}
+	
+	</script>
+	</div>
+	</body>
+</html>

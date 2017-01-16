@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+function initMap() {
+  var myLatLng = {lat: 24.123751, lng: 120.675018};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+  
+  var latlng = {lat: 24.1228, lng: 120.6728};
+  var marker = new google.maps.Marker({
+    position: latlng,
+    map: map,
+    title: 'Hello World!'
+  });
+  
+  var latlng1 = {lat: 24.12329, lng: 120.6808};
+  var marker = new google.maps.Marker({
+    position: latlng1,
+    map: map,
+    title: 'Hello World!'
+  });
+  
+  var latlng2 = {lat: 24.12177, lng: 120.6727};
+  var marker = new google.maps.Marker({
+    position: latlng2,
+    map: map,
+    title: 'Hello World!'
+  });
+  
+  var latlng3 = {lat: 24.11988, lng: 120.6743};
+  var marker = new google.maps.Marker({
+    position: latlng3,
+    map: map,
+    title: 'Hello World!'
+  });
+  
+   var latlng4 = {lat: 24.12069, lng: 120.6733};
+  var marker = new google.maps.Marker({
+    position: latlng4,
+    map: map,
+    title: 'Hello World!'
+  });
+}
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHMCooQbCZ0IndAireAlJaSXy5Si8uoqc&signed_in=true&callback=initMap"></script>
+  </body>
+</html>
